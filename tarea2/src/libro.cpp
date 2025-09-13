@@ -123,7 +123,6 @@ TLibro copiarTLibro(TLibro l){
     strcpy(copia->apellidoAutor , l->apellidoAutor);
     strcpy(copia->descripcion , l->descripcion);
     copia->idGeneroLibro = l->idGeneroLibro;
-    copia->fechaEdicion =copiarTFecha(l->fechaEdicion);
-    liberarTFecha(l->fechaEdicion);
+    copia->fechaEdicion =copiarTFecha(l->fechaEdicion);;
     return copia;
 }
